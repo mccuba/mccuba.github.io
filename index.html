@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manolo Canales Cuba — AI / ML Engineer</title>
+<meta name="description" content="Manolo Canales Cuba — AI Engineer trabajando en modelos generativos, flow matching y computer graphics. Autor de FlowMotion (Computers & Graphics, 2025).">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="top">
+  <a class="nav__mark" href="#top">MC<span>C</span></a>
+  <nav class="nav__links">
+    <a href="#research">Research</a>
+    <a href="#projects">Proyectos</a>
+    <a href="#skills">Stack</a>
+    <a href="#contact">Contacto</a>
+  </nav>
+  <a class="nav__cta" href="https://github.com/mccuba" target="_blank" rel="noopener">GitHub ↗</a>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__field">
+      <canvas id="flowCanvas" aria-hidden="true"></canvas>
+      <span class="hero__field-caption">trayectoria con jitter <span class="dot dot--jitter"></span> &nbsp;vs&nbsp; predicción directa del objetivo <span class="dot dot--target"></span></span>
+    </div>
+    <p class="eyebrow">Manolo Canales Cuba — AI Engineer</p>
+    <h1 class="hero__title">Construyo sistemas que aprenden<br>a llegar directo al objetivo.</h1>
+    <p class="hero__lede">Investigo y desarrollo modelos generativos —flow matching, difusión, arquitecturas Transformer— aplicados a gráfica por computadora y generación de movimiento humano. Publicado en <em>Computers &amp; Graphics</em>.</p>
+    <div class="hero__ctas">
+      <a class="btn btn--primary" href="#research">Ver investigación</a>
+      <a class="btn btn--ghost" href="#projects">Ver proyectos</a>
+    </div>
+    <dl class="hero__stats">
+      <div><dt>Jitter (KIT)</dt><dd>Mejor de su clase</dd></div>
+      <div><dt>Jitter (HumanML3D)</dt><dd>2° mejor reportado</dd></div>
+      <div><dt>Publicación</dt><dd>Computers &amp; Graphics, 2025</dd></div>
+    </dl>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <p class="eyebrow">Sobre mí</p>
+    <div class="about__grid">
+      <p class="about__text">
+        Soy ingeniero enfocado en <strong>modelos generativos e IA aplicada a gráfica por computadora</strong>: desde arquitecturas de flow matching para generación de movimiento 3D, hasta sistemas de caché y visualización a bajo nivel en C/C++. Me interesa el tramo completo del trabajo de investigación aplicada — formular el problema, diseñar el objetivo de entrenamiento, y llevarlo a código que funciona en producción.
+      </p>
+      <p class="about__text">
+        Fuera del código, sigo de cerca matemática aplicada, tecnología y cine — tres lugares distintos desde donde pensar el mismo problema: cómo representar y predecir sistemas complejos con precisión y elegancia.
+      </p>
+      <ul class="about__facts">
+        <li><span>62</span>repositorios públicos</li>
+        <li><span>50</span>stars recibidas</li>
+        <li><span>3</span>autores en FlowMotion</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- RESEARCH -->
+  <section class="research" id="research">
+    <p class="eyebrow">Investigación destacada</p>
+    <h2 class="section-title">FlowMotion</h2>
+    <p class="section-sub">Target-Predictive Conditional Flow Matching for Jitter-Reduced Text-Driven Human Motion Generation</p>
+
+    <div class="paper-card">
+      <div class="paper-card__body">
+        <p class="paper-card__authors">Manolo Canales Cuba, Vinícius do Carmo Melício, João Paulo Gois</p>
+        <p class="paper-card__abstract">
+          Generar movimiento humano 3D a partir de texto que sea fiel y temporalmente estable sigue siendo difícil, sobre todo en entornos con recursos limitados. FlowMotion propone un objetivo de entrenamiento dentro de Conditional Flow Matching que predice directamente el <em>movimiento objetivo</em> en lugar del campo de velocidad intermedio, lo que produce trayectorias más rectas y estables durante el muestreo.
+        </p>
+        <p class="paper-card__abstract">
+          El resultado: el mejor <em>jitter</em> reportado en el dataset KIT y el segundo mejor en HumanML3D, con un FID competitivo en ambos — manteniendo la velocidad de síntesis característica de flow matching y un modelo lo bastante liviano para correr en entornos con recursos acotados.
+        </p>
+        <div class="paper-card__tags">
+          <span>Conditional Flow Matching</span>
+          <span>Transformers</span>
+          <span>Text-to-Motion</span>
+          <span>PyTorch</span>
+        </div>
+      </div>
+      <div class="paper-card__links">
+        <a href="https://arxiv.org/abs/2504.01338" target="_blank" rel="noopener">arXiv:2504.01338 ↗</a>
+        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0097849325002158" target="_blank" rel="noopener">Computers &amp; Graphics (DOI) ↗</a>
+        <a href="https://github.com/mccuba/FlowMotion" target="_blank" rel="noopener">Código fuente ↗</a>
+        <a href="https://github.com/mccuba/fm-page" target="_blank" rel="noopener">Sitio del paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects" id="projects">
+    <p class="eyebrow">Proyectos</p>
+    <h2 class="section-title">Ingeniería, de bajo a alto nivel</h2>
+    <p class="section-sub">Una muestra de repos públicos: desde sistemas de caché en C++ hasta modelos generativos de visión.</p>
+
+    <div class="project-grid">
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <h3>haarpcache</h3>
+          <span class="lang"><i class="dot" style="--c:#f34b7d"></i>C++</span>
+        </div>
+        <p>Caché de propósito general, fork y evolución de <em>thundercache</em>. Enfocado en rendimiento y simplicidad de la API.</p>
+        <div class="project-card__meta">
+          <span>★ 18</span><span>⑂ 17</span>
+        </div>
+        <a href="https://github.com/mccuba/haarpcache" target="_blank" rel="noopener">Ver repo ↗</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <h3>haarp-viewer</h3>
+          <span class="lang"><i class="dot" style="--c:#555555"></i>C</span>
+        </div>
+        <p>Visor construido en Ext JS para inspeccionar y depurar el estado de HaarpCache en tiempo real.</p>
+        <div class="project-card__meta">
+          <span>★ 1</span><span>⑂ 4</span>
+        </div>
+        <a href="https://github.com/mccuba/haarp-viewer" target="_blank" rel="noopener">Ver repo ↗</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <h3>cp-vton</h3>
+          <span class="lang"><i class="dot" style="--c:#3572A5"></i>Python</span>
+        </div>
+        <p>Reimplementación de <em>"Toward Characteristic-Preserving Image-based Virtual Try-On Network"</em> — generación de imágenes condicionada para prueba virtual de prendas.</p>
+        <div class="project-card__meta">
+          <span>Fork de sergeywong/cp-vton</span>
+        </div>
+        <a href="https://github.com/mccuba/cp-vton" target="_blank" rel="noopener">Ver repo ↗</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <h3>fm-page</h3>
+          <span class="lang"><i class="dot" style="--c:#f1e05a"></i>JavaScript</span>
+        </div>
+        <p>Sitio web del paper FlowMotion: presentación de resultados, comparaciones y material suplementario.</p>
+        <div class="project-card__meta">
+          <span>Página de proyecto</span>
+        </div>
+        <a href="https://github.com/mccuba/fm-page" target="_blank" rel="noopener">Ver repo ↗</a>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__top">
+          <h3>courseraCopyYoutubeTranslate</h3>
+          <span class="lang"><i class="dot" style="--c:#89e051"></i>Shell</span>
+        </div>
+        <p>Pipeline en shell para copiar, traducir y subir cursos completos de Coursera a un canal de YouTube.</p>
+        <div class="project-card__meta">
+          <span>Automatización</span>
+        </div>
+        <a href="https://github.com/mccuba/courseraCopyYoutubeTranslate" target="_blank" rel="noopener">Ver repo ↗</a>
+      </article>
+
+      <article class="project-card project-card--muted">
+        <div class="project-card__top">
+          <h3>+ 57 repositorios más</h3>
+        </div>
+        <p>Explorá el resto de experimentos, forks y utilidades directamente en el perfil de GitHub.</p>
+        <a href="https://github.com/mccuba?tab=repositories" target="_blank" rel="noopener">Ver todos los repos ↗</a>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills" id="skills">
+    <p class="eyebrow">Stack</p>
+    <h2 class="section-title">Herramientas que uso</h2>
+    <div class="skills__grid">
+      <div class="skills__group">
+        <h3>Machine Learning &amp; Generative AI</h3>
+        <ul>
+          <li>PyTorch</li>
+          <li>Flow Matching / Diffusion</li>
+          <li>Transformers</li>
+          <li>Computer Vision</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>Lenguajes</h3>
+        <ul>
+          <li>Python</li>
+          <li>C / C++</li>
+          <li>JavaScript</li>
+          <li>Shell</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>Graphics &amp; Systems</h3>
+        <ul>
+          <li>Computer Graphics</li>
+          <li>Estructuras de datos / caching</li>
+          <li>Matemática aplicada</li>
+          <li>Optimización</li>
+        </ul>
+      </div>
+      <div class="skills__group">
+        <h3>Investigación</h3>
+        <ul>
+          <li>Diseño experimental</li>
+          <li>Escritura científica</li>
+          <li>Evaluación de modelos</li>
+          <li>Reproducibilidad</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <p class="eyebrow">Contacto</p>
+    <h2 class="section-title">Hablemos de tu equipo de AI.</h2>
+    <p class="section-sub">Abierto a roles de AI / ML Engineering y colaboraciones de investigación en modelos generativos.</p>
+    <div class="contact__links">
+      <a class="btn btn--primary" href="https://www.linkedin.com/in/manolo-canales/" target="_blank" rel="noopener">LinkedIn ↗</a>
+      <a class="btn btn--ghost" href="https://github.com/mccuba" target="_blank" rel="noopener">GitHub ↗</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span>© <span id="year"></span> Manolo Canales Cuba</span>
+  <span>Construido con HTML, CSS y Canvas — sin frameworks.</span>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
