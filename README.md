@@ -1,4 +1,4 @@
-# mcanalescuba.github.io
+# mccuba.github.io
 
 Portfolio personal de **Manolo Canales Cuba**, orientado a postulaciones de **AI / ML Engineering**. Sitio estático (HTML + CSS + JS puro, sin frameworks ni build step), listo para GitHub Pages.
 
