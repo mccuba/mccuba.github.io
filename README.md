@@ -1,4 +1,4 @@
-# mcanalescuba.github.io
+# mccuba.github.io
 
 Portfolio personal de **Manolo Canales Cuba**, orientado a postulaciones de **AI / ML Engineering**. Sitio estático (HTML + CSS + JS puro, sin frameworks ni build step), listo para GitHub Pages.
 
@@ -11,12 +11,12 @@ assets/
   js/main.js
 ```
 
-## Cómo publicarlo en tu repo `mcanalescuba.github.io`
+## Cómo publicarlo en tu repo `mccuba.github.io`
 
 1. Cloná tu repo (si no lo tenés local):
    ```bash
-   git clone https://github.com/mccuba/mcanalescuba.github.io.git
-   cd mcanalescuba.github.io
+   git clone https://github.com/mccuba/mccuba.github.io.git
+   cd mccuba.github.io
    ```
 2. Copiá adentro estos tres elementos (`index.html`, `assets/`, este `README.md`), reemplazando lo que haya en `main`.
 3. Commit y push:
@@ -25,7 +25,7 @@ assets/
    git commit -m "Rediseño del portfolio, orientado a AI Engineering"
    git push origin main
    ```
-4. En **Settings → Pages** del repo, confirmá que la fuente sea la rama `main`, carpeta `/ (root)`. Como el repo se llama `mcanalescuba.github.io`, GitHub Pages lo sirve automáticamente en:
+4. En **Settings → Pages** del repo, confirmá que la fuente sea la rama `main`, carpeta `/ (root)`. Como el repo se llama `mccuba.github.io`, GitHub Pages lo sirve automáticamente en:
    `https://mcanalescuba.github.io/`
 
 ## Contenido a revisar / personalizar
