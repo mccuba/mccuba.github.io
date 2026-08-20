@@ -758,6 +758,61 @@ section{
 
 
 /* ============================================================
+   ACTIVITY
+   ============================================================ */
+
+.activity{
+  border-top:1px solid var(--line);
+}
+
+.activity-card{
+  background:var(--bg-card);
+
+  border:1px solid var(--line);
+
+  border-radius:var(--radius);
+
+  padding:1.5rem 1.5rem 1.25rem;
+
+  overflow-x:auto;
+}
+
+.activity-card img{
+  display:block;
+
+  width:100%;
+
+  min-width:640px;
+
+  height:auto;
+
+  filter:invert(0.92) hue-rotate(180deg) saturate(1.15) brightness(0.95);
+
+  border-radius:4px;
+}
+
+.activity-card a{
+  display:inline-block;
+
+  margin-top:1.1rem;
+
+  font-family:var(--mono);
+
+  font-size:0.82rem;
+
+  color:var(--text);
+
+  border-bottom:1px solid var(--line);
+}
+
+.activity-card a:hover{
+  color:var(--teal);
+
+  border-color:var(--teal);
+}
+
+
+/* ============================================================
    SKILLS
    ============================================================ */
 

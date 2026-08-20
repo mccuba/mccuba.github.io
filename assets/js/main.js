@@ -11,7 +11,7 @@ document.getElementById('year').textContent =
 // ---------------------------------------------------------------
 
 const revealTargets = document.querySelectorAll(
-  '.about__grid, .paper-card, .project-card, .skills__group, .contact'
+  '.about__grid, .paper-card, .project-card, .activity-card, .skills__group, .contact'
 );
 
 revealTargets.forEach(
