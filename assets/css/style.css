@@ -235,3 +235,21 @@ section{ max-width:var(--maxw); margin:0 auto; padding:4.5rem clamp(1.25rem,4vw,
 /* ---------- reveal on scroll ---------- */
 .reveal{ opacity:0; transform:translateY(14px); transition:opacity .6s ease, transform .6s ease; }
 .reveal.is-visible{ opacity:1; transform:none; }
+
+.hero__field {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+  overflow: hidden;
+}
+
+.hero__flow {
+  display: block;
+
+  width: 100%;
+  height: auto;
+
+  object-fit: contain;
+}
